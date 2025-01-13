@@ -1,5 +1,7 @@
-sample csc396
-team members
-project pitch
-front end
-back end
+# Sample CSC396
+# Team Members
+# Project Pitch
+# Front End
+# Back End
+# Functional Reqs
+# Non-Functional Reqs
