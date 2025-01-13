@@ -1,5 +1,5 @@
 # Sample CSC396
-# Team Members
+# Team Members: Daniel Rimmele, Saddat Ahmad, Alex Shepardson.
 # Project Pitch
 # Front End
 # Back End
