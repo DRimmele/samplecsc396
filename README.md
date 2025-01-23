@@ -11,9 +11,9 @@ Create a full stack web application that allows users to create flashcards using
 Allows for easier studiing methods. Stores past flashcards for studing as well.
 
 # Front End
-
+We will use fullstack to build the front end of the website, allowing users to log in, enter a topic for flashcards, and generate flashcards based on the topic.
 # Back End
-
+We will
 # Functional Reqs
 - User must be able to log in and create account.
 - User must be able to choose topics in relation to flashcards.
@@ -24,5 +24,5 @@ Allows for easier studiing methods. Stores past flashcards for studing as well.
 # Non-Functional Reqs
 - Performance: flashcards should be created in under 10 seconds for 90% of users.
 - Security: User data and login information must be stored using AES-256 encryption
-- Usability: Website should be mobile friendly and achieve user satifaction score of at least 85%.
+- Usability: Website should be website friendly and achieve user satifaction score of at least 85%.
 - Scalability: The platform must be able to have at least 100 active users on the platform at once.
