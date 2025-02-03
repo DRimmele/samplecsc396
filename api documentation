@@ -1,1 +1,87 @@
 AI Flashcards API Documentation
+
+http://127.0.0.1:8000
+
+
+Generate Flashcards 
+
+URL: /flashcards
+Method: Post
+Description: Create a group of flashcards.
+Request Parameters
+No parameters needed
+Request Body Object Structure:
+No request object needed.
+Response Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer,
+  {
+[
+
+
+Reponse Example:
+
+[
+  { 
+    "id": 1,
+    "question": "What is 7+3?",
+    "answer": "3"
+  },
+  {
+     "id": 2,
+    "question": "What is Georgia's Capitol",
+    "answer": "Atlanta"
+  },
+  {
+     "id": 3,
+    "question": "Whats the largest Ocean?",
+    "answer": "Pacific Ocean"
+  },
+  {
+     "id": 4,
+    "question": "What is the shortened name for the element Iridium ",
+    "answer": "IR"
+  },
+  {
+     "id": 5,
+    "question": "Who created the company Microsoft",
+    "answer": "Bill Gates"
+  },
+]
+
+Get Flashcards 
+
+URL: /flashcards/{ID}
+Method: Get
+Description: Gets a single flashcard from list
+Request Parameters
+No parameters needed
+Request Body Object Structure:
+No request object needed.
+Response Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer,
+  {
+[
+
+
+
+Reponse Example:
+
+[
+  { 
+    "id": 1,
+    "question": "What is 7+3?",
+    "answer": "3"
+  },
+]
+
+
