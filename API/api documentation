@@ -1,0 +1,253 @@
+AI Flashcards API Documentation
+
+http://127.0.0.1:8000
+
+
+Generate Flashcards 
+
+URL: /flashcards
+Method: Post
+Description: Create a group of flashcards.
+Request Parameters
+No parameters needed
+Request Body Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer
+  {
+[
+
+Request Body Example:
+
+[
+  { 
+    "difficulty": Easy
+    "question": "What is 7+3?",
+    "amount": "1"
+  }
+]
+
+Response Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer,
+    "id": integer
+  {
+[
+
+Reponse Example:
+
+[
+  { 
+    "id": 1,
+    "question": "What is 7+3?",
+    "answer": "10"
+  },
+  {
+     "id": 2,
+    "question": "What is Georgia's Capitol",
+    "answer": "Atlanta"
+  },
+  {
+     "id": 3,
+    "question": "Whats the largest Ocean?",
+    "answer": "Pacific Ocean"
+  },
+  {
+     "id": 4,
+    "question": "What is the shortened name for the element Iridium ",
+    "answer": "IR"
+  },
+  {
+     "id": 5,
+    "question": "Who created the company Microsoft",
+    "answer": "Bill Gates"
+  }
+]
+
+HTTP Status Codes:
+● 201 Created: Successfully created the new flashcard.
+● 400 Bad Request: Invalid or incomplete data provided.
+● 500 Internal Server Error: Error while fetching flashcard.
+
+
+
+
+Get Flashcards 
+
+URL: /flashcards/{ID}
+Method: Get
+Description: Gets a single flashcard from list
+Request Parameters
+No parameters needed
+Request Body Object Structure:
+No request object needed.
+Response Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer
+  {
+[
+
+Reponse Example:
+
+[
+  { 
+    "id": 1,
+    "question": "What is 7+3?",
+    "answer": "10"
+  }
+]
+
+HTTP Status Codes:
+● 200 OK: Successfully retrieved the list of flashcards.
+● 500 Internal Server Error: Error while fetching flashcards.
+
+
+
+Update Flashcard by ID
+
+URL: /flashcards{ID}
+Method: Patch
+Description: updates a single flashcard.
+Request Parameters
+ID: the unique id for the flashcard to be retrieved 
+Request Body Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer
+  {
+[
+
+Response Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer,
+    "id": integer
+  {
+[
+
+Reponse Example:
+
+[
+  { 
+    "id": 1,
+    "question": "What is 7+3?",
+    "answer": "10"
+  }
+]
+
+HTTP Status Codes:
+● 201 Created: Successfully created the new flashcard.
+● 400 Bad Request: Invalid or incomplete data provided.
+● 500 Internal Server Error: Error while fetching flashcard.
+
+
+
+Delete Flashcard by ID
+
+URL: /flashcards{ID}
+Method: Delete
+Description: Deletes a single flashcard.
+Request Parameters
+ID: the unique id for the flashcard to be retrieved 
+Request Body Object Structure:
+No request object needed.
+Response Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer
+  {
+[
+
+Response Object Structure
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer,
+    "id": integer
+  {
+[
+
+HTTP Status Codes:
+● 201 Created: Successfully created the new flashcard.
+● 400 Bad Request: Invalid or incomplete data provided.
+● 500 Internal Server Error: Error while fetching flashcard.
+
+
+
+Get List of all Flashcards 
+
+URL: /flashcards
+Method: Post
+Description: Create a list of all flashcards.
+Request Parameters
+No parameters needed
+Request Body Object Structure:
+No request object needed.
+Response Object Structure:
+
+[
+  {
+    "text": string,
+    "difficulty": string,
+    "card_amount":  integer,
+    "id": integer
+  {
+[
+
+
+Reponse Example:
+
+[
+  { 
+    "id": 1,
+    "question": "What is 7+3?",
+    "answer": "10"
+  },
+  {
+     "id": 2,
+    "question": "What is Georgia's Capitol",
+    "answer": "Atlanta"
+  },
+  {
+     "id": 3,
+    "question": "Whats the largest Ocean?",
+    "answer": "Pacific Ocean"
+  },
+  {
+     "id": 4,
+    "question": "What is the shortened name for the element Iridium ",
+    "answer": "IR"
+  },
+  {
+     "id": 5,
+    "question": "Who created the company Microsoft",
+    "answer": "Bill Gates"
+  },
+]
+
+HTTP Status Codes:
+● 201 Created: Successfully created the new flashcard.
+● 400 Bad Request: Invalid or incomplete data provided.
+● 500 Internal Server Error: Error while fetching flashcard.
