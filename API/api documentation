@@ -14,7 +14,7 @@ Request Body Object Structure:
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer
   {
@@ -34,7 +34,7 @@ Response Object Structure:
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer,
     "id": integer
@@ -92,7 +92,7 @@ Response Object Structure:
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer
   {
@@ -125,7 +125,7 @@ Request Body Object Structure:
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer
   {
@@ -135,7 +135,7 @@ Response Object Structure:
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer,
     "id": integer
@@ -172,7 +172,7 @@ Response Object Structure:
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer
   {
@@ -182,7 +182,7 @@ Response Object Structure
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer,
     "id": integer
@@ -209,7 +209,7 @@ Response Object Structure:
 
 [
   {
-    "text": string,
+    "topic": string,
     "difficulty": string,
     "card_amount":  integer,
     "id": integer
